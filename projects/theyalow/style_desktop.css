@@ -1,0 +1,579 @@
+@font-face{
+    font-family: "Segoe WP";
+    src: url("../theyalow/assets/fonts/SegoeWP.ttf") format("truetype");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Asap REG";
+    src: url("../theyalow/assets/fonts/asap/Asap-Regular.otf");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Segoe UI";
+    src: url("../theyalow/assets/fonts/segoe-ui-4-cufonfonts/SegoeUI.ttf");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Open Sans Reg";
+    src: url("../theyalow/assets/fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "PT Sans";
+    src: url("../theyalow/assets/fonts/pt-sans/PTS55F.ttf");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "PT Sans Narrow";
+    src: url("../theyalow/assets/fonts/pt-sans/PTN57F.ttf");
+    font-weight:  normal;
+    font-style: normal;
+}
+*{
+    box-sizing:border-box
+}
+
+body{
+    display: block;
+    height: 1847px;
+    width: 1300px;
+    background: white;
+    margin: 0 auto;
+}
+
+ .first-section {
+    display: block;
+    position: relative;
+    height: 566px;
+    width: 1300px;
+    margin: 0 auto;
+    background-image: url("../theyalow/assets/Images/back_1st_sec.png");
+}
+
+.second-section {
+    display: block;
+    position: relative;
+    height: 212px;
+    width: 1300px;
+    margin: 0 auto;
+    background-image: url("../theyalow/assets/Images/back_2nd_sec.png");
+
+}
+
+.third-section {
+    display: block;
+    position: relative;
+    top: -30px;
+    height: 509px;
+    width: 1300px;
+    margin: 0 auto;
+    background-image: url("../theyalow/assets/Images/back_3rd_sec.png");
+}
+
+.forth-section {
+    display: block;
+    position: relative;
+    top: -30px;
+    height: 499px;
+    width: 1300px;   
+    margin: 0 auto;
+    background-image: url("../theyalow/assets/Images/back_4th_sec.png");
+}
+
+.fifth-section {
+    display: block;
+    position: relative;
+    top: -30px;
+    height: 64px;
+    width: 1300px;   
+    margin: 0 auto;
+    background-image: url("../theyalow/assets/Images/back_5th_sec.png");
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+
+}
+
+.text-title {
+    position: absolute;
+    height: 41px;
+    width: 225px;
+    top: 49px;
+    left: 229px;
+    font-size: 41px;
+    letter-spacing: -3px;
+    color: #ffffff;
+    font-family:"Lucida Sans Unicode", sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+.rec1,
+.rec2,
+.rec3 {
+    position: absolute;
+    height: 41px;
+    width: 453px;
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    opacity: 0.27;
+}
+
+.rec1 {
+    top: 62px;
+    left: 698px;
+}
+
+.rec2{
+    top: 65px;
+    left: 702px;
+}
+
+.rec3{
+    top: 70px;
+    left: 706px;
+    opacity: 1;
+}
+
+.line1,
+.line2 {
+    position: absolute;
+    top: 71px;
+    width: 1px;
+    height: 40px;
+    background-color:  rgba(155, 125, 8, 0.5);
+}
+
+.line1 {left: 879px;}
+.line2 {left: 1012px;}
+
+/* #nav_about, 
+#nav_services, 
+#nav_contact{
+    position: absolute;
+    height: 18px;
+    width: 83px;
+    top: 80px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: hsl(48, 90%, 32%);
+    font-family: "Segoe WP";
+    text-align: center;
+} */
+
+/* #nav_about{left: 776px;}
+#nav_services{left: 922px;}
+#nav_contact{left: 1062px;}
+
+#nav_about:hover, 
+#nav_services:hover,
+#nav_contact:hover{
+    color: hsl(48, 10%, 32%);
+    cursor: grabbing;
+} */
+
+ul.navigation-list {
+    position: inherit;
+    margin: 6px;
+    align-items: center;
+}
+
+ul.navigation-list li {
+    display: inline;
+    padding: 6px 10px 10px 10px;
+    border:1px solid rgba(155, 125, 8, 0.5);
+    border-width: 0 1px 0 0;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: hsl(48, 90%, 32%);
+    font-family: "Segoe WP";
+    text-align: center;
+}
+
+ul.navigation-list li:last-of-type {
+    border-right-width: 0;
+}
+
+ul.navigation-list li:hover {
+    cursor: pointer;
+}
+
+.video1-back{
+    position: absolute;
+    width: 549px;
+    height: 327px;
+    top: 167px;
+    left: 149px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+    background-color: rgba(239, 220, 143, 0.3);
+}
+
+.video1-filter{
+    position: inherit;
+    width: 549px;
+    height: 327px;
+    background-color: rgba(245, 197, 5,0.11);
+    z-index: 2;
+}
+
+.back-play1{
+    position: inherit;
+    top: 278px; 
+    left: 29px; 
+    z-index: 3;
+    width: 27px;
+    height: 27px;
+    background-color: rgba(245, 197, 5,0.37);
+}
+
+.back_play2{
+    position: inherit;
+    top: 129px; 
+    left: 240px; 
+    z-index: 3;
+    width: 68px;
+    height: 68px;
+    border-radius: 33px;
+    background-color: rgba(245, 197, 5,0.72);
+}
+
+.back-time{
+    position: inherit;
+    top: 285px; 
+    left: 79px; 
+    z-index: 3;
+    width: 405px;
+    height: 13px;
+    border-radius: 5px;
+    background-color: rgba(245, 197, 5,0.28);
+}
+
+button.right,
+button.left {
+    position: absolute;
+    box-shadow: 0;
+    top: 299px; 
+    left: 1267px;
+    width: 33px;
+    height: 58px;
+    background-color: #f5c506;
+    background-image: url("../theyalow/assets/Images/Shape\ 1\ copy.png");
+    background-repeat: no-repeat;
+    background-position: 11px 17px;
+}
+
+button.right {
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+button.left {left: 1267px;
+}
+
+.text-ctrl {
+    position: absolute;
+    top: 238px; 
+    left: 750px;
+    width: 400px;
+    height: 125px;
+    font-size: 63px;
+    letter-spacing: 1px;
+    color: #f5c506;
+    font-family: "Asap REG";
+    font-weight: 400;
+    text-align: center;
+}
+
+.table-box {
+    position: inherit;
+    margin: 0 auto;
+    width: 1021px;
+    height: 100%;
+}
+
+table {
+    width: 100%;
+    vertical-align: baseline;
+}
+
+
+td {
+    width: 33%;
+    vertical-align: 10px;
+
+}
+
+td p {
+    position: relative;
+    top: 15px;
+    left: 30%;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 200;
+}
+
+.text-sec3 {
+    position: absolute;
+    top: 41px;
+    left: 143px;
+    width: 517px;
+    height: 37px;
+    font-size: 37px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-weight: 400;
+}
+
+.third-section .block1 {
+    position: absolute;
+    top: 107px; 
+    left: 139px;
+    width: 341px;
+    height: 233px;
+    background-color: rgb(236, 158, 3);
+}
+
+.third-section .block1 p {
+    margin-left: 31px;
+    margin-top: 27px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 200;
+}
+
+.plus1 {
+    position: inherit;
+    top: 208px;
+    left: 315px;
+    width: 11px;
+    height: 11px;
+}
+.third-section .block2 {
+    position: absolute;
+    width: 353px;
+    height: 233px;
+    left: 478px; 
+    top: 107px;
+}
+
+.block2 div {
+    position: inherit;
+    left: 131px;
+    top: 92px;
+    width: 61px;
+    height: 61px;
+    border-radius: 30px;
+    background-color: rgba(245, 197, 6, 0.72);
+    z-index: 1;
+}
+
+.block3 {
+    position: absolute;
+    width: 329px;
+    height: 233px;
+    left: 829px; 
+    top: 107px;
+    background-color: rgb(236, 158, 3);
+}
+
+.plus3 {
+    position: inherit;
+    top: 208px;
+    left: 308px;
+    width: 11px;
+    height: 11px;
+}
+
+.plus1:hover,
+.plus3:hover {
+    cursor: pointer;
+}
+
+
+.date-bl3{
+    position: inherit;
+    top: 20px;
+    left: 286px;
+    width: 26px;
+    height: 18px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.block4{
+    position: absolute;
+    width: 113px;
+    height: 86px;
+    left: 139px; 
+    top: 338px;
+    background-color: rgb(221, 177, 1);
+}
+
+.date-bl4-numb{
+    position: inherit;
+    width: 55px;
+    height: 38px;
+    left: 31px; 
+    top: 16px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.date-bl4-month{
+    position: inherit;
+    width: 55px;
+    height: 15px;
+    left: 32px; 
+    top: 50px;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+}
+
+.slidecont-3sec-line {
+    position: inherit;
+    width: 897px;
+    height: 16px;
+    left: 212px; 
+    top: 471px;  
+}
+
+.slidecont-3sec-line input {
+    overflow: hidden;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 90%;
+    border-radius: 7px;
+    background-color:  rgba(255, 255, 255, 0.48);  
+
+}
+
+.slidecont-3sec-line input:focus{
+    outline: none;
+}
+
+.slidecont-3sec-line input::-webkit-slider-thumb {
+    height: 16px;
+    width: 198px;
+    border-radius: 8px;
+    background: #EC9E03;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+.title-4sec {
+    position: absolute;
+    top: 48px;
+    left: 353px;
+    width: 601px;
+    height: 32px;
+    font-size: 43px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-weight: 400;
+}
+
+.ellipse-4sec {
+    position: absolute;
+    top: 93px;
+    left: 137px;
+    width: 117px;
+    height: 117px;
+    border-radius: 58px;
+    background-color: #f5c506;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    text-align: center;
+}
+
+.ellipse-4sec p {
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.lists-cont-4sec {
+    position: absolute;
+    top: 181px;
+    left: 775px;
+    width: 406px;
+    height: 224px;
+}
+
+ul.lis1-4section,
+ul.list2-4section{
+    margin: 10px 0px;
+
+}
+
+ul.list1-4section li,
+ul.list2-4section li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans Reg";
+    font-weight: 400;
+}
+
+ul.list1-4section li::before,
+ul.list2-4section li::before {
+    content: "";
+    display: list-item;
+    position: absolute;
+    left: 0;
+    height:15px;
+    width: 15px;
+    border-radius:50%;
+    background-color:#000;
+    margin-right:16px;
+    margin-top: 8px;
+    background-color: #f5c506;
+}
+
+.title-footer{
+    position: absolute;
+    display: block;
+    top: -12px;
+    left:213px;
+    width: 160px;
+    height: 21px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family:"Lucida Sans Unicode", sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}

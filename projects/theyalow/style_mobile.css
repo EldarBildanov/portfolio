@@ -1,0 +1,395 @@
+@font-face {
+    font-family: "Segoe WP";
+    src: url("../theyalow/assets/fonts/SegoeWP.ttf") format("truetype");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Asap REG";
+    src: url("../theyalow/assets/fonts/asap/Asap-Regular.otf");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../theyalow/assets/fonts/segoe-ui-4-cufonfonts/SegoeUI.ttf");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Reg";
+    src: url("../theyalow/assets/fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../theyalow/assets/fonts/pt-sans/PTS55F.ttf");
+    font-weight:  normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../theyalow/assets/fonts/pt-sans/PTN57F.ttf");
+    font-weight:  normal;
+    font-style: normal;
+}
+* { 
+    box-sizing:border-box
+}
+
+body {
+    display: block;
+    height: 1600px;
+    width: 620px;
+    background: white;
+    margin: 0 auto;
+    font-weight: 300;
+}
+header {
+    position: relative;
+    height: 62px;
+    width: 640px;
+    margin: 0 auto;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+.title-back {
+    position: absolute;
+    width: 186px;
+    height: 62px;
+    background-image: url("../theyalow/assets/Images/Back_title_mob.png");
+}
+
+.title {
+    position: inherit;
+    top: 19px;
+    left: 60px;
+    height: 19px;
+    width:108px;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family:"Lucida Sans Unicode", sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+nav {
+    position: absolute;
+    left: 186px;
+    width: 456px;
+    height: 62px;
+    background-color: #f5c506;
+}
+
+nav ul {
+    position: inherit;
+    padding: 10px 0 0 15px;
+    margin: 6px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 6px 10px 10px 10px;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: hsl(48, 90%, 32%);
+    font-family: "Segoe WP";
+    text-align: center;
+    vertical-align: baseline;
+}
+
+nav ul li:hover {
+    color: hsl(48, 10%, 32%);
+    cursor: pointer;
+}
+
+.video1-container {
+    position: relative;
+    height: 345px;
+    width: 640px;
+    margin: 0 auto;
+    z-index: 0;
+
+}
+
+.filter-video1 {
+    position: absolute;
+    height: 325px;
+    width: 640px;
+    background-color: rgba(245, 197, 6, 0.11);
+    z-index: 1;
+}
+
+.ellipse-v1 {
+    position: inherit;
+    top: 132px;
+    left: 293px;
+    width: 67px;
+    height: 67px;
+    border-radius: 34px;
+    background-color: rgba(245, 197, 6, 0.72);
+    z-index: 2;
+}
+
+.rect-v1 {
+    position: inherit;
+    top: 285px;
+    left: 133px;
+    width: 404px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: rgba(245, 197, 6, 0.28);
+    z-index: 2;
+}
+
+.rect-play {
+    position: inherit;
+    top: 278px;
+    left: 83px;
+    width: 27px;
+    height: 27px;
+    background-color: rgba(245, 197, 6, 0.37);
+    z-index: 2;
+}
+
+.sec2 {
+    background-image: url("../theyalow/assets/Images/back_2sec_mobile.png");
+    position: relative; 
+    top: -24px;
+    height: 174px;
+    width: 640px;
+}
+
+table {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    top: 10px;
+}
+
+td {
+    width: 33%;
+    vertical-align: 20px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+}
+
+.main-container {
+    position: relative;
+    height: 470px;
+    width: 640px;
+}
+
+.main-1block {
+    position: absolute;
+    left: 9px;
+    width: 299px;
+    height: 232px;
+    background-color: #ec9e03;
+    font-size: 19px;
+    letter-spacing: 0px;
+}
+
+.main-1block p {
+    margin: 20px 38px 21px 26px;
+    font-size: 28px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.plus{
+    position: inherit;
+    top: 206px;
+    left: 278px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+}
+
+.plus:hover{
+    opacity: 1;
+    cursor: grabbing;
+}
+
+.main-2block{
+    position: absolute;
+    left: 320px;
+    width: 310px;
+    height: 233px;
+}
+
+.ellipse-v2{
+    position: inherit;
+    top: 92px;
+    left: 126px;
+    width: 62px;
+    height: 62px;
+    border-radius: 30px;
+    background-color: #f5c506;
+    opacity: 0.72;
+}
+
+.main-3block{
+    position: absolute;
+    top: 243px;
+    width: 320px;
+    height: 233px;
+    background-color: #f5c507;
+}
+
+.main-4block{
+    position: absolute;
+    top: 243px;
+    left: 320px;
+    height: 233px;
+    width: 320px;
+    background-color: #f5c507;
+}
+
+.list-container{
+    position: inherit;
+    top: 22px;
+    left: 7px;
+    height: 157px;
+    width: 284px;
+}
+
+.list-container ul {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.list-container ul li {
+    list-style-type: none;
+    margin-bottom: 4px;
+    padding: 8px 10px 10px 20px;
+    border-radius: 10px;
+    background-image: url("../theyalow/assets/Images/cloud_mob.png");
+    background-repeat: no-repeat;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #8f8e8e;
+    font-family: "Arial";
+}
+
+
+.submit-container {
+    position: inherit;
+    top: 185px;
+    left: 19px;
+    width: 201px;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #8f8e8e;
+    font-family: "Arial";
+    text-align:right
+}
+
+.submit-container:focus,
+.submit-button:focus {
+    outline: none;
+}
+
+.submit-button {
+    position: inherit;
+    top: 185px;
+    left: 219px;
+    width: 70px;
+    height: 30px;
+    background-image: linear-gradient(0deg, #ec9e03 0%, #d08e0c 100%) ; 
+    border-radius:  0 10px 10px 0 ; 
+    border: none;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(0deg, #ec9e03 50%, #d08e0c 100%) ; 
+}
+
+.submit-button:active {
+    background: linear-gradient(0deg, #af780a 50%, #d08e0c 100%) ; 
+  }
+
+.last-section {
+    position: relative;
+    height: 465px;
+    width: 640px;
+    background-image: url("../theyalow/assets/Images/last_section_mobile.png");
+}
+
+.title-last-sec {
+    position: absolute;
+    top: 41px;
+    left: 23px;
+    width: 589px;
+    height: 30px;
+    font-size: 39px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "Open Sans Reg";
+    font-weight: 400;
+    text-align: center
+}
+
+.ellipse-last-sec {
+    position: absolute;
+    top: 114px;
+    left: 26px;
+    width: 117px;
+    height: 117px;
+    border-radius: 58px;
+    background-color: #f5c506;
+}
+
+.ellipse-last-sec p {
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    text-align: center;
+    margin-top: 48px;
+}
+
+footer {
+    position: relative;
+    height: 42px;
+    width: 640px;
+    background-color: #4c4c4c;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+}
+
+.title-footer {
+    position: absolute;
+    top: 12px;
+    left: 106px;
+    height: 12px;
+    width:92px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family:"Lucida Sans Unicode", sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}

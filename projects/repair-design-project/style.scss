@@ -1,0 +1,2711 @@
+
+@font-face {
+    font-family: "Futura Demi C";
+    src: url("../repair-design-project/assets/fonts/futurademic.otf");
+}
+
+@font-face {
+    font-family: "Futura Book C";
+    src: url("../repair-design-project/assets/fonts/futurabookc.otf");
+}
+
+@font-face {
+    font-family: "Yeseva one";
+    src: url("../repair-design-project/assets/fonts/fonts-desktop/YesevaOne.ttf")
+}
+
+@font-face {
+    font-family: "Futura Medium C";
+    src: url("../repair-design-project/assets/fonts/fonts-desktop/FuturaMediumC.ttf");
+}
+
+@font-face {
+    font-family: "Procima Nova";
+    src: url("../repair-design-project/assets/fonts/fonts-desktop/ProximaNova-Regular.ttf");
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(190, 175, 175);
+}
+
+.wrapper {
+    background-color: rgb(24, 23, 23);
+    width: 1440px;
+    height: 10150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-header {
+    display: flex;
+    height: 83px;
+    align-items: center;
+
+    font-family: "Futura Book C";
+    font-size: 14px;
+    line-height: 16px;
+
+    & .logo-wrapper {
+        flex-grow: 2;
+        text-align: center;
+        & h1 {
+            font-family: "Futura Demi C";
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        
+        color: #E3B873;
+        }
+    }
+    & .nav-wrapper {
+        flex-grow: 3;
+        & .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            & .nav-item {
+                &:hover {
+                    color: #E3B873;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    & .phone-wrapper {
+        flex-grow: 1;
+        text-align: right;
+        & a {
+            padding-right: 10px;
+            color: #E3B873;
+        }
+    }
+    & .button-wrapper {
+        flex-grow: 2;
+        color: #E3B873;
+        padding-right: 10px;
+    
+        & button {
+            background-color: #E3B873;
+        color: white;
+        padding: 10px 30px;
+    
+        font-family: "Futura Demi C";
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        outline: none;
+        }
+    }
+}
+
+.wrapper-main-picture {
+    display: flex;
+    overflow: hidden;
+}
+
+.wrapper-instagram {
+    height: 707px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & a {
+        margin: 0;
+        transform: rotate(90deg);
+        color: #E3B873;
+        vertical-align: middle;
+        font-family: "Futura Demi C";
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.wrapper-picture {
+    flex-grow: 17;
+    height: 707px;
+
+    @media (max-width: 600px) {
+        height: 434px;
+    }
+
+    background-image: url("../repair-design-project/assets/images/background_main.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    & .filter {
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        & .wrapper-text {
+            position: relative;
+            width: 95%;
+            max-width: 535px;
+            height: 215px;
+            top: 27%;
+            left: 4%;
+
+            display: flex;
+            flex-direction: column;
+            color: #FFFFFF;
+            & .title {
+                flex-grow: 1;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 40px;
+                        line-height: 53px;
+                        text-transform: uppercase;
+                        text-align: left;
+                        margin: 0;
+                        & span { color: #E3B873};
+                        @media (max-width: 800px) {
+                            font-size: 31px;
+                            line-height: 40px;
+                        };
+                        @media (max-width: 420px) {
+                            font-size: 23px;
+                            line-height: 30.55px;
+                        };
+                }
+
+            }
+            & .description {
+                flex-shrink: 1;
+                width: 100%;
+                & p {
+                    font-family: "Futura Book C";
+                    font-size: 22px;
+                    line-height: 30px;
+                    text-align: left;
+                    margin: 0;
+                    @media (max-width: 800px) {
+                        font-size: 20px;
+                    };
+                    @media (max-width: 420px) {
+                        font-size: 18px;
+                    };
+                }
+            }
+        }
+        & .wrapper-buttons {
+            position: relative;
+            width: 95%;
+            max-width: 535px;
+            height: 70px;
+            top: 30%;
+            left: 4%;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 600px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            & button.calculate,
+            & button.submit {
+                width: 48%;
+                border: 1px solid black;
+                border-radius: 2px;
+                background-color: rgba(255, 255, 255,0);
+                outline: none;
+                font-family: "Futura Demi C";
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                &:hover {
+                    background-color: #E3B873;
+                    cursor: pointer;
+                }
+                @media (max-width: 600px) {
+                    width: 100%;
+                    flex-grow: 1;
+                }
+            }
+
+        }
+        & .wrapper-scroll {
+            position: relative;
+            width: 100%;
+            max-width: 247px;
+            height: 97px;
+            top: 325px;
+            left: -80px;
+            background: rgb(7, 7, 7);
+            &:hover {
+                cursor: pointer;
+            }
+
+            display: flex;
+            justify-content: space-evenly;
+            & .text {
+                width: 110px;
+                display: flex;
+                align-items: center;
+                & p {
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                @media (max-width: 900px) {
+                    height: 434px;
+                    display: none;
+                }
+            }
+            & .arrow {
+                width: 20px;
+                height: 20px;
+                margin-top: 32px;
+                margin-left: -20px;
+                border-right: 1.5px solid #E3B873;
+                border-bottom: 1.5px solid #E3B873;
+                transform: rotate(45deg);
+            }
+            @media (max-width: 600px) {
+                display: none;
+            }
+            
+        }
+    }
+
+
+}
+
+
+.wrapper-compl-project-section {
+    display: flex;
+    margin-left: 5.05%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    @media (max-width: 800px) {
+        flex-wrap: nowrap;
+        margin-top: 10%;
+        overflow: visible;
+    }
+
+    & .description {
+        width: 39%;
+        height: 300px;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        @media (max-width: 800px) {
+            width: 100%;
+            height: auto;
+            order: 1;
+            justify-content: flex-start;
+        }
+        & .title {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            & p {
+                margin: 0;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+                color: #E3B873;
+                text-align: left;
+                @media (max-width: 800px) {
+                    font-size: 23px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+
+            }
+        }
+        & .abstract {
+            width: 100%;
+            height: 35%;
+            & p {
+                font-family: "Futura Book C";
+                font-size: 18px;
+                line-height: 29px;
+                color: #FFFFFF;
+                text-align: left;
+                @media (max-width: 800px) {
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    & .photos {
+        width: 59%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @media (max-width: 800px) {
+            order: 2;
+        }
+        & .list {
+            height: 10%;
+            @media (max-width: 800px) {
+                display: none;
+            }
+            & .types-of-completed {
+                list-style: none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                & li {
+
+                    margin-right: 50px;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.3);
+
+                    &:hover {
+                        color: #E3B873;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        & .pictures {
+            height: 80%;
+            width: 90%;
+            position: relative;
+            overflow: hidden;
+            & .c_slider {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 300%;
+                height: 100%;
+                background: url("../repair-design-project/assets/images/complited1.png") 0 0 no-repeat, 
+                    url("../repair-design-project/assets/images/complited2.png") 680px 0 no-repeat,
+                    url("../repair-design-project/assets/images/complited3.png") 1360px 0 no-repeat;
+                background-size: contain;
+            }
+
+            & .slider {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 300%;
+                @media (max-width: 800px) {
+                    width: 100%;
+                }
+                height: 100%;
+                animation: slider 32s infinite;
+
+                & figure {
+                    position: relative;
+                    margin: 0;
+                    padding: 0;
+
+                    & img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:after {
+                        position: absolute;
+                        display: block;
+                        content: " ";
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        animation: figurer 32s infinite;
+                    }
+                }
+
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: " ";
+                    width: 100%;
+                    height: 1px;
+                }
+            }
+            & img {
+                width: 80%;
+                height: 100%;
+                margin-left:10px;
+            }
+        }
+
+    }
+
+    & .information {
+        width: 39%;
+        height: 300px;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 800px) {
+            order: 2;
+            width: 90%;
+            height: 40%;
+        }
+        & .prop {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 4;
+            display: flex;
+            flex-wrap: wrap;
+            & li {
+                width: 50%;
+                height: 50%;
+
+                display: flex;
+                flex-direction: column;
+                & .title {
+                    flex-grow: 1;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    color: #E3B873;
+                    margin-top: 35px;
+                    text-align: start;
+                }
+                & .text {
+                    flex-grow: 3;
+                    font-family: "Futura Book C";
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    margin: 0;
+                    text-align: start;
+                }
+            }
+        }
+        & .slider {
+            @media (max-width: 800px) {
+                display: none;
+            }
+            flex-grow: 2;
+            display: flex;
+            justify-content: flex-start;
+            & .left-arrow {
+                width: 16.3%;
+                height: 100%;
+            }
+            & .dots {
+                width: 30%;
+                padding: 0;
+                margin: 0 5px;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                & li {
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.3);
+                    &:hover {
+                        cursor: pointer;
+                        background: #FFFFFF;
+                    }
+                }
+            }
+            & .right-arrow {
+                width: 16.3%;
+                height: 100%;
+            }
+        }
+
+    }
+}
+.wrapper-video-block {
+    display: flex;
+    height: 775px;
+    margin-left: 5.05%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 800px) {
+        margin: 0;
+    }
+    & .wrapper-title {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & .title {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            & p {
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0;
+                color: #FFFFFF;
+            }
+        }
+        & .logo {
+            flex-grow: 1;
+            & .icon {
+                position: relative;
+                height: 20px;
+                width: 20px;
+                top: 10%;
+                left: 42%;
+                border-radius: 50%;
+                background-color: #E3B873;
+                @media (max-width: 420px) {
+                    left: 45%;
+                }
+            }
+
+        }
+    }
+
+    & .video-holder {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & iframe {
+            min-width: 300px;
+            min-height: 200px;
+            width: 100%;
+            max-width: 600px;
+
+
+
+        }
+
+    }
+
+    & .description-video {
+        height: 150px;
+        width: 60%;
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+        & p {
+            font-family: "Futura Book C";
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+            color: #363636;
+            background-color: #b3a2a2;
+            @media (max-width: 620px) {
+                font-size: 14px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+            @media (max-width: 750px) {
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+.wrapper-submit {
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 0 20%;
+    height:  110px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media (max-width: 750px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 92%;
+        height: 674px;
+        margin: 0 auto;
+    }
+    & .input-name,
+      .input-phone {
+        width: 18%;
+        margin: 1px;
+        font-family: "Futura Book C";
+        font-size: 18px;
+        line-height: 24px;
+        color: #363636;
+        & p {
+            margin: 0;
+            text-align: left;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(54, 54, 54, 0.5);
+        }
+        & input {
+            border: 0;
+            border-bottom: 1px solid #BFBFBF;
+            height: 45%;
+            @media (max-width: 750px) {
+                align-self: flex-start;
+            }
+
+        }
+    }
+    & .input-name {
+        @media (max-width: 750px) {
+            width: 100%;
+            flex-grow: 1;
+            order: 1;
+        }
+    }
+    & .input-phone {
+        @media (max-width: 750px) {
+            width: 100%;
+            flex-grow: 1;
+            order: 2;
+        }
+    }
+    & .button-wrapper {
+        width: 25%;
+        margin: 1px;
+        background-color: #E3B873;
+        font-family: "Futura Demi C";
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @media (max-width: 750px) {
+            width: 100%;
+            flex-grow: 1;
+            order: 4;
+            }
+    }
+    & .input-agree {
+        width: 60%;
+        margin: 1px;
+        font-family: "Futura Book C";
+        font-size: 16px;
+        line-height: 22px;
+        color: #181818;
+        @media (max-width: 750px) {
+            width: 100%;
+            flex-grow: 1;
+            order: 3;
+        }
+    }
+
+}
+
+.wrapper-types-of-repair {
+    height: 800px;
+    @media (max-width: 800px) {
+        height: 1690px;
+    }
+    & .title {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .text{
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            & p {
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #d6c8c8;
+                margin: 0;
+            }
+        }
+        & .icon {
+            margin-top: 15px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #E3B873;
+            @media (max-width: 420px) {
+                left: 45%;
+            }
+        }
+    }
+
+    & .types-of-repair {
+        height: 600px;
+        display: flex;
+        margin: 0 10%;
+        justify-content: space-between;
+        @media (max-width: 800px) {
+            flex-direction: column;
+            height: 1500px;
+        }
+        & .type-redecorating {
+            flex-grow:1;
+            min-width: 220px;
+            margin: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            & .back-picture {
+                width: 100%;
+                height: 70%;
+                background-image: url("../repair-design-project/assets/images/types_redecor.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 49%;
+            }
+            & .list {
+                width: 80%;
+                height: 45%;
+                z-index: 1;
+                background: #FFFFFF;
+                margin-left: -90%;
+                margin-top:80%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                }
+                & .title {
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                        text-align: left;
+                        margin: 0 10%;
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                            line-height: 22px; 
+                        }
+                    }
+                }
+                & ul {
+                    & li {
+                        text-align: left;
+                        font-family: "Futura Book C";
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        @media (max-width: 600px) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+            & .button {
+                width: 60%;
+                height: 10%;
+                z-index: 2;
+                background-color: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                margin-left: -90%;
+                margin-top: 145%;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 150%;
+                }
+            }
+        }
+
+        & .type-overhaul {
+            flex-grow:1;
+            min-width: 220px;
+            margin: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            & .back-picture {
+                position: relative;
+                width: 100%;
+                height: 70%;
+                background-image: url("../repair-design-project/assets/images/types_overhaul.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 49%;
+                z-index: 0;
+            }
+            & .list {
+                width: 80%;
+                height: 45%;
+                z-index: 1;
+                background: #FFFFFF;
+                margin-left: -90%;
+                margin-top:80%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                }
+                & .title {
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                        text-align: left;
+                        margin: 0 10%;
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                            line-height: 22px; 
+                        }
+                    }
+                }
+                & ul {
+                    & li {
+                        text-align: left;
+                        font-family: "Futura Book C";
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        @media (max-width: 600px) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+            & .button {
+                width: 60%;
+                height: 10%;
+                z-index: 2;
+                background-color: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                margin-left: -90%;
+                margin-top: 145%;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 150%;
+                }
+            }
+        }
+
+        & .type-designer-repair {
+            flex-grow:1;
+            min-width: 220px;
+            margin: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            & .back-picture {
+                width: 100%;
+                height: 70%;
+                background-image: url("../repair-design-project/assets/images/types_designer_repair.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 49%;
+            }
+            & .list {
+                width: 80%;
+                height: 45%;
+                background: #FFFFFF;
+                z-index: 1;
+                margin-left: -90%;
+                margin-top:80%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                }
+                & .title {
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                        text-align: left;
+                        margin: 0 10%;
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                            line-height: 22px; 
+                        }
+                    }
+                }
+                & ul {
+                    & li {
+                        text-align: left;
+                        font-family: "Futura Book C";
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        @media (max-width: 600px) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+            & .button {
+                width: 60%;
+                height: 10%;
+                z-index: 2;
+                background-color: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                margin-left: -90%;
+                margin-top: 145%;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 150%;
+                }
+            }
+        }
+    }
+}
+
+.wrapper-measurer {
+    height: 700px;
+    background-image: url("../repair-design-project/assets/images/background_measure.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 190%;
+    background-color: #FFFFFF;
+    transform: scaleX(-1);
+    @media (max-width: 1000px) {
+        display: none;
+    }
+    & .filter {
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255,0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        transform: scaleX(-1);
+        overflow: hidden;
+        & .wheel {
+            width: 832px;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            & .ring {
+                position: absolute;
+                height: 100%;
+                width: 700px;
+                top: 0;
+                margin-left: -160px;
+                border-radius: 50%;
+                border: 2px solid #E3B873;
+            }
+            & .list {
+                position: absolute;
+                height: 100%;
+                width: 250px;
+                left: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                list-style: none;
+                counter-reset: n;
+                & li:before {
+                    counter-increment: n;
+                    content: "O" counter(n);
+                    display: block;
+                    background-color: #E3B873;
+                    border: 5px solid #FFFFFF;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    position: absolute;
+                }
+                & li {
+                    height: 800px;
+                    & p {
+                        text-align: left;
+                        font-family: "Futura Medium C";
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #363636;
+                    }
+                }
+                & .o1 {
+                    margin-top: 10px;
+                    margin-left: -110px;
+                    &:before {
+                        left: -130px;
+                        top: 30px;
+                    }
+                }
+                & .o2 {
+                    margin-top: -95px;
+                    margin-left: 13px;
+                    &:before {
+                        left: -15px;
+                        top: 170px;
+                    }
+                }
+                & .o3 {
+                    margin-top: -95px;
+                    margin-left: 24px;
+                    &:before {
+                        left: 10px;
+                        top: 360px;
+                    } 
+                }
+                & .o4 {
+                    margin-top: -89px;
+                    margin-left: -30px;
+                    &:before {
+                        left: -60px;
+                        top: 530px;
+                    } 
+                }
+
+            }
+        }
+        & .form-container {
+            width: 600px;
+            height: 80%;
+            background-color: #131313;
+            & .form {
+                margin: 10px 20px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                & .title {
+                    width: 50%;
+                    flex-grow: 2;
+                    & p {
+                        font-family: "Futura Demi C";
+                        font-size: 20px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+                & .name {
+                    flex-grow: 3;
+                }
+                & .phone {
+                    flex-grow: 2;
+                }
+                & .e-mail {
+                    flex-grow: 2;
+                }
+                & .name,
+                  .phone,
+                  .e-mail {
+                  width: 80%;
+                  margin: 1px;
+                  font-family: "Futura Book C";
+                  font-size: 18px;
+                  line-height: 24px;
+                  color: #FFFFFF;
+                  & p {
+                      margin: 0;
+                      text-align: left;
+                      font-size: 15px;
+                      line-height: 20px;
+                      color: rgba(220, 220, 220, 0.5);
+                  }
+                  & input {
+                      background: none;
+                      border: 0;
+                      border-bottom: 1px solid #BFBFBF;
+                      height: 45%;
+                      width: 100%;
+                      @media (max-width: 750px) {
+                          align-self: flex-start;
+                      }
+          
+                  }
+              }
+                & .agree {
+                    flex-grow: 1;
+                    width: 70%;
+                    font-family: "Futura Book C";
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    align-self: flex-start;
+                }
+                & .button {
+                    flex-grow: 1;
+                    width: 40%;
+                    padding: 0;
+                    align-self: flex-end;
+                    background-color: #E3B873;
+                    & p {
+                        margin: 0;
+                        padding: 0;
+                        font-family: "Futura Demi C";
+                        font-size: 13px;
+                        line-height: 18px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            
+        }
+        & .save {
+            width: 600px;;
+            height: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            & .logo {
+                width: 72px;
+                height: 72px;
+                margin: 0 20px;
+                background-color: #E3B873;
+                border-radius: 50%;
+            }
+            & .text {
+                height: 72px;
+                height: calc(100% - 72px);
+                & p {
+                    font-family: "Futura Demi C";
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #E3B873;
+                    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+                }
+            }
+        }
+    }
+}
+
+.wrapper-fantasies {
+    height: 1018px;
+    max-height: 1018px;
+    @media (max-width: 800px) {
+        height: 500px;
+    }
+    overflow: hidden;
+    & .back-picture {
+        position: inherit;
+        height: 85%;
+        margin-top: 10%;
+        background: url("../repair-design-project/assets/images/background_fantasies.png");
+        background-size: cover;
+        & .filter {
+            width: 100%;
+            height: 100%;
+            background:rgba(1, 1, 1,0.8);
+            @media (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+
+    & .block-list {
+
+        height: 64%;
+        width: 33%;
+        margin: -54% 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        & .title {
+ 
+            flex-grow: 1;
+            width: 60%;
+            margin: 5px;
+            & p {
+                text-align: left;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 37px;
+                text-transform: uppercase;
+                color: #E3B873;
+                @media (max-width: 800px) {
+                    color: #131313;
+                }
+            }
+        }
+        & .list {
+            flex-grow: 4;
+            margin: 5px;
+            @media (max-width: 800px) {
+                display: none;
+            }
+            list-style: none;
+            padding: 0;
+            & li {
+                margin: 5px 0;
+                text-align: left;
+                font-family: "Proxima Nova";
+                font-size: 20px;
+                line-height: 34px;
+                color: #FFFFFF;
+                &:hover {
+                    color: #E3B873;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    & .block-photos1 {
+        @media (max-width: 800px) {
+            display: none;
+        }
+        height: 1018px;
+        width: 24.6%;
+        margin: -61.3% 40.7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        & .pict1 {
+            height: 556.86px;
+            background-image: url("../repair-design-project/assets/images/fant_img1.png");
+            background-size: cover;
+            background-position-x: center;
+           
+        }
+
+        & .pict2 {
+            height: 349.47px;
+            background-image: url("../repair-design-project/assets/images/fant_img2.png");
+            margin-top: 55px;
+            background-size: cover;
+        }
+    }
+    & .block-photos2 {
+        @media (max-width: 800px) {
+            display: none;
+        }
+        height: 1018px;
+        width: 24.6%;
+        margin: -70.7% 68.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+
+        & .pict3 {
+            height: 275px;
+            background-image: url("../repair-design-project/assets/images/fant_img3.png");
+            margin-bottom: 55px;
+            background-size: cover;
+        }
+
+        & .pict4 {
+            height: 625.23px;
+            background-image: url("../repair-design-project/assets/images/fant_img4.png");
+            margin-bottom: 55px;
+            margin-left: -300px;
+            background-size: cover;
+        }
+    }
+}
+
+
+.wrapper-design-project {
+    height: 1038px;
+    @media (max-width: 800px) {
+        height: 1700px;
+    }
+    
+    & .head-text {
+        height: 25.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 800px) {
+            height: 12%;
+        }
+        & .title {
+            flex-grow: 1;
+            & p {
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #BFBFBF;
+            }
+        }
+        & .logo {
+            flex-grow: 1;
+        }
+        & .description {
+            flex-grow: 1;
+            width: 46%;
+            @media (max-width: 800px) {
+                width: 70%;
+            }
+            & p {
+                font-family: "Futura Book C";
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                color: #BFBFBF;
+                @media (max-width: 800px) {
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+    }
+    & .types-of-design {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 800px) {
+            flex-direction: column;
+            height: 1500px;
+            overflow: hidden;
+        }
+        & .type-mini {
+            width: 27.2%;
+            height: 736px;
+            margin:10px 15px;
+            overflow: hidden;
+            @media (max-width: 800px) {
+                width: 100%;
+                margin:10px 15px;
+            }
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            & .back-picture {
+                width: 100%;
+                height: 70%;
+                background-image: url("../repair-design-project/assets/images/types_redecor.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: 50%;
+            }
+            & .list {
+                width: 80%;
+                height: 38%;
+                z-index: 1;
+                background: #FFFFFF;
+                margin-left: -90%;
+                margin-top:80%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                }
+                & .title {
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                        text-align: left;
+                        margin: 0 10%;
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                            line-height: 22px; 
+                        }
+                    }
+                }
+                & ul {
+                    @media (max-width: 800px) {
+                        display: none;
+                    }
+                    & li {
+                        text-align: left;
+                        font-family: "Futura Book C";
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        @media (max-width: 600px) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+            & .but-tod {
+                width: 60%;
+                height: 10%;
+                min-height: 75px;
+                z-index: 2;
+                background-color: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                margin-left: -90%;
+                margin-top: 145%;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 150%;
+                }
+            }
+
+        }
+
+        & .type-standart {
+            width: 27.2%;
+            height: 736px;
+            margin:10px 15px;
+            overflow: hidden;
+            @media (max-width: 800px) {
+                width: 100%;
+                margin:10px 15px;
+            }
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            & .back-picture {
+                width: 100%;
+                height: 70%;
+                background-image: url("../repair-design-project/assets/images/types_overhaul.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: 50%;
+            }
+            & .list {
+                width: 80%;
+                height: 45%;
+                z-index: 1;
+                background: #FFFFFF;
+                margin-left: -90%;
+                margin-top:80%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                }
+                & .title {
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                        text-align: left;
+                        margin: 0 10%;
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                            line-height: 22px; 
+                        }
+                    }
+                }
+                & ul {
+                    @media (max-width: 800px) {
+                        display: none;
+                    }
+                    & li {
+                        text-align: left;
+                        font-family: "Futura Book C";
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        @media (max-width: 600px) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+                
+            }
+            & .but-tod {
+                width: 60%;
+                height: 10%;
+                min-height: 75px;
+                z-index: 2;
+                background-color: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                margin-left: -90%;
+                margin-top: 155%;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 150%;
+                }
+            }
+
+        }
+
+        & .type-full {
+            width: 27.2%;
+            height: 736px;
+            margin:10px 15px;
+            @media (max-width: 800px) {
+                width: 100%;
+                margin:10px 15px;
+            }
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            & .back-picture {
+                width: 100%;
+                height: 70%;
+                background-image: url("../repair-design-project/assets/images/types_designer_repair.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: 50%;
+            }
+            & .list {
+                width: 80%;
+                height: 60%;
+                z-index: 1;
+                background: #FFFFFF;
+                margin-left: -90%;
+                margin-top:80%;
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    overflow: hidden;
+                }
+                & .title {
+                    height: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    & p {
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #363636;
+                        text-align: left;
+                        margin: 0 10%;
+                        @media (max-width: 600px) {
+                            font-size: 15px;
+                            line-height: 22px; 
+                        }
+                    }
+                }
+                & ul {
+                    @media (max-width: 800px) {
+                        display: none;
+                    }
+                    & li {
+                        text-align: left;
+                        font-family: "Futura Book C";
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #959595;
+                        @media (max-width: 600px) {
+                            font-size: 13px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+            & .but-tod {
+                width: 60%;
+                height: 10%;
+                min-height: 75px;
+                z-index: 2;
+                background-color: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                margin-left: -90%;
+                margin-top: 178%;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    margin-left: -100%;
+                    font-size: 13px;
+                    line-height: 21px;
+                    margin-top: 150%;
+                }
+            }
+
+        }
+    }
+}
+
+.wrapper-steps {
+    @media (max-width: 900px) {
+        display: none;
+    }
+    height: 686px;
+    margin: 0 100px;
+    margin-top: -45px;
+    display: flex;
+    & .steps-description {
+        height: 100%;
+        width: 38.7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        & .first-title {
+            width: 100%;
+            height:  14%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & .pre-title {
+                flex-grow: 1;
+                & p {
+                    margin: 0;
+                    text-align: left;
+                    font-family: "Futura Demi C";
+                    font-size: 15px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+            & .title {
+                flex-grow: 4;
+                width: 40%;
+                & p {
+                    margin: 0;
+                    text-align: left;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 27px;
+                    line-height: 37px;
+                    text-transform: uppercase;
+                    color: #E3B873;
+                }
+            }
+        }
+        & .part-title {
+            width: 100%;
+            height:  25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            & .counter {
+                height: 50px;
+                width: 100%;
+                & p {
+                    margin: 15px 0;
+                    text-align: left;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+            & .title {
+                height: 43px;
+                width: 44%;
+                & p {
+                    margin: 0;
+                    text-align: left;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 23px;
+                    text-transform: uppercase;
+                    color: #E3B873;
+                }
+
+            }
+        }
+        & .description {
+            width: 337px;
+            height:  28%;
+            & p {
+                margin: 10px 0;
+                text-align: left;
+                font-family: "Futura Book C";
+                font-size: 15px;
+                line-height: 25px;
+                color: #FFFFFF;
+            }
+        }
+        & .range {
+            width: 70%;
+            height:  28%;
+            display: flex;
+            justify-content: center;
+            & .dots {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                align-items: center;
+                padding-left: 0;
+                & li {
+                    margin: 0 5px;
+                    & input {
+                        background: rgba(255, 255, 255, 0.3);
+                        cursor: pointer;
+                        &:checked {
+                            background: rgba(255, 255, 255, 1);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    & .steps-list {
+        height: 100%;
+        width: 61.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        & .table {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            & .step-item {
+                flex-basis: 25%;
+                height: 45%;
+                margin: 10px;
+                & p:first-child {
+                    text-align: left;
+                    margin: 0;
+                    font-family: "Yeseva One";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    color: rgb(255, 255, 255);
+                    opacity: 0.4;
+                }
+                & p:last-child {
+                    text-align: left;
+                    margin-top: 10px;
+                    width: 66%;
+                    font-family: "Futura Book C";
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    opacity: 0.4;
+                }
+                &:hover {
+
+                    p {opacity: 1;}
+                    cursor: pointer;
+                }
+            }
+        }
+        & .picture {
+            width: 100%;
+            height: 55%;
+            background-image: url("../repair-design-project/assets/images/steps-image.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 25px -10px;
+        }
+    }
+}
+
+.wrapper-team {
+    height: 939px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 1000px) {
+        height: 3000px;
+    }
+    & .top-text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width:800px) {
+            height: auto;
+        }
+        & .title {
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            & p {
+                text-align: center;
+                margin: 0;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        & .logo {
+            margin: 10px 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #E3B873;;
+        }
+        & .description {
+            height: 30%;
+            width: 57%;
+            & p {
+                margin: 0;
+                text-align: center;
+                font-family: "Futura Book C";
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    & .teammates {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 3;
+        width: 71.5%;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+        & .teammate1 {
+            @media (max-width: 1000px) {
+                width: 95%;
+                height: 30%;
+                margin-left: 10%;
+            }
+            width: 26.1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            & .photo-back {
+                height: 81%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-image: url("../repair-design-project/assets/images/team1.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: -150px -50px;
+                @media (max-width: 800px) {
+                    background-position: -280px -50px;
+                }
+                & .logo {
+                    width: 70px;
+                    height: 70px;
+                    margin-top: -35px;
+                    margin-left: -35px;
+                    background-color: #E3B873;
+                }
+                & .label {
+                    align-self: center;
+                    width: 90%;
+                    height: 18%;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    & p {
+                        margin: 5px;
+                        &:first-child {
+                            font-family: "Yeseva One";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #181818;
+                        }
+                        &:last-child {
+                            font-family: "Futura Book C";
+                            font-size: 18px;
+                            line-height: 26px;
+                            text-align: center;
+                            color: #959595;
+                        }
+                    }
+                }
+            }
+            & .button {
+                height: 10%;
+                width: 90%;
+                margin-top: 15px;
+                background-color: #E3B873;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        & .teammate2 {
+            @media (max-width: 1000px) {
+                width: 95%;
+                height: 30%;
+                margin-left: 10%;
+            }
+            width: 26.1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            & .photo-back {
+                height: 81%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-image: url("../repair-design-project/assets/images/team2.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: -150px;
+                @media (max-width: 800px) {
+                    background-position: -280px;
+                }
+                & .logo {
+                    width: 70px;
+                    height: 70px;
+                    margin-top: -35px;
+                    margin-left: -35px;
+                    background-color: #E3B873;
+                }
+                & .label {
+                    align-self: center;
+                    width: 90%;
+                    height: 18%;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    & p {
+                        margin: 5px;
+                        &:first-child {
+                            font-family: "Yeseva One";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #181818;
+                        }
+                        &:last-child {
+                            font-family: "Futura Book C";
+                            font-size: 18px;
+                            line-height: 26px;
+                            text-align: center;
+                            color: #959595;
+                        }
+                    }
+                }
+            }
+            & .button {
+                height: 10%;
+                width: 90%;
+                margin-top: 15px;
+                background-color: #E3B873;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        & .teammate3 {
+            @media (max-width: 1000px) {
+                width: 95%;
+                height: 30%;
+                margin-left: 10%;
+            }
+            width: 26.1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            & .photo-back {
+                height: 81%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-image: url("../repair-design-project/assets/images/team3.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: -110px;
+                @media (max-width: 800px) {
+                    background-position: -200px;
+                }
+                & .logo {
+                    width: 70px;
+                    height: 70px;
+                    margin-top: -35px;
+                    margin-left: -35px;
+                    background-color: #E3B873;
+                }
+                & .label {
+                    align-self: center;
+                    width: 90%;
+                    height: 18%;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    & p {
+                        margin: 5px;
+                        &:first-child {
+                            font-family: "Yeseva One";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #181818;
+                        }
+                        &:last-child {
+                            font-family: "Futura Book C";
+                            font-size: 18px;
+                            line-height: 26px;
+                            text-align: center;
+                            color: #959595;
+                        }
+                    }
+                }
+            }
+            & .button {
+                height: 10%;
+                width: 90%;
+                margin-top: 15px;
+                background-color: #E3B873;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    & .bottom-text {
+        @media (max-width: 800px) {
+            display: none;
+        }
+        flex-grow: 1;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & p {
+            margin: 0;
+            text-align: center;
+            font-family: "Futura Book C";
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+            color: #BFBFBF;
+        }
+    }
+}
+
+.wrapper-clients {
+    @media (max-width: 1000px) {
+        display: none;
+    }
+    height: 736px;
+    display: flex;
+    flex-direction: column;
+    & .text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        & .title {
+            flex-grow: 1;
+            & p {
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        & .logo {
+            flex-grow: 1;
+            margin: 10px 0;
+            width: 50px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #E3B873;;
+        }
+        & .description {
+            flex-grow: 1;
+            width: 46%;
+            @media (max-width: 800px) {
+                width: 70%;
+            }
+            & p {
+                font-family: "Futura Book C";
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                color: #FFFFFF;
+                @media (max-width: 800px) {
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    & .clients {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        & .client {
+            &:first-child {
+                & .top {
+                    & .photo {
+                        background-image: url("../repair-design-project/assets/images/client1.png");
+                    }
+                }
+            }
+            &:nth-child(2) {
+                & .top {
+                    & .photo {
+                        background-image: url("../repair-design-project/assets/images/client2.png");
+                    }
+                }
+            }
+            &:last-child {
+                & .top {
+                    & .photo {
+                        background-image: url("../repair-design-project/assets/images/client3.png");
+                    }
+                }
+            }
+            width: 26.1%;
+            margin: 0 10px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            & .top {
+                height: 21%;
+                width: 90%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                & .photo {
+                   width: 76px;
+                   height: 76px;
+                   margin: 10px;
+                   border-radius: 50%;
+                   background-size: cover;
+                   background-position: center;
+                }
+                & .name {
+                    width: 160px;
+                    margin: 10px;
+                    & p {
+                        margin: 0;
+                        font-family: "Yeseva One";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: #181818;
+                    }
+
+                }
+
+            }
+            & .text {
+                height: 48%;
+                width: 88%;
+                & p {
+                    text-align: left;
+                    margin: 0;
+                    font-family: FuturaBookC;
+                    font-size: 15px;
+                    line-height: 27px ;
+                    color: #959595;
+                }
+            }
+            & .button {
+                height: 11%;
+                width: 70%;
+                align-self: flex-start;
+                background: #E3B873;
+                display: flex;
+                & .piece {
+                    &:first-child {
+                        flex-grow: 5;
+                        border-right: 1px solid #FFFFFF;
+                    }
+                    &:last-child {flex-grow: 6;}
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    & .logo {
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid black;
+                    }
+                    & .value {
+                        & p {
+                            font-family: "Yeseva One";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 17px;
+                            line-height: 24px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.wrapper-form {
+    height: 445px;
+    margin: 6.1% 19.7%;
+    @media (max-width: 800px) {
+        margin: 0;
+        height: 600px;
+    }
+    background: black;
+    display: flex;
+    justify-content: center;
+    & .form-container {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+        & .title {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & p {
+                margin: 0;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        & .name,
+          .phone {
+            width: 45%;
+            @media (max-width: 800px) {
+                width: 100%;
+            }
+            margin: 0 10px;
+            & p {
+                font-family: "Futura Book C";
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.5);
+                margin: 0;
+                text-align: left;
+            }
+            & input {
+                background: none;
+                border: 0;
+                border-bottom: 1px solid #BFBFBF;
+                height: 30%;
+                width: 100%;
+            }
+        }
+        & .question {
+            width: 100%;
+            & p {
+                font-family: "Futura Book C";
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(255, 255, 255, 0.5);
+                margin: 0;
+                text-align: left;
+            }
+            & input {
+                background: none;
+                border: 0;
+                border-bottom: 1px solid #BFBFBF;
+                height: 30%;
+                width: 100%;
+            }
+        }
+        & .agree {
+            width: 100%;
+            font-family: "Futura Book C";
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+            align-self: center;
+        }
+        & .submit {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            & button {
+                @media (max-width: 800px) {
+                    width: 100%;
+                }
+                width: 40%;
+                height: 45%;
+                background-color: #E3B873;
+                font-family: "Futura Demi C";
+                font-size: 13px;
+                line-height: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+    
+
+}
+
+.wrapper-map {
+    height: 666px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    & .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 800px) {
+            order:2;
+        }
+        & .title {
+            flex-grow: 1;
+            width: 64%;
+            & p {
+                margin: 0;
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #E3B873;
+            }
+        }
+        & .icons {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            & .mail {
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+                background-color: #E3B873;
+                border-radius: 50%;
+            }
+            & .insta {
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+                background-color: #E3B873;
+                border-radius: 50%;
+            }
+
+        }
+    }
+    & .map {
+        @media (max-width: 800px) {
+            order: 1;
+            width: 100%;
+        }
+        height: 465px;
+        width: 925px;
+        background-image: url("../repair-design-project/assets/images/map.png");
+        background-size: auto;
+        background-position: 70% -150%;
+        & .filter {
+            width: 100%;
+            height: 100%;
+            background: rgba(120,120,120,0.5);
+        }
+    }
+}
+
+.main-footer {
+    @media (max-width: 800px) {
+        display: none;
+    }
+    display: flex;
+    height: 83px;
+    align-items: center;
+
+    font-family: "Futura Book C";
+    font-size: 14px;
+    line-height: 16px;
+
+    & .logo-wrapper {
+        flex-grow: 2;
+        text-align: center;
+        & h1 {
+            font-family: "Futura Demi C";
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        
+        color: #E3B873;
+        }
+    }
+    & .nav-wrapper {
+        flex-grow: 3;
+        & .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            & .nav-item {
+                &:hover {
+                    color: #E3B873;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    & .phone-wrapper {
+        flex-grow: 1;
+        text-align: right;
+        & a {
+            padding-right: 10px;
+            color: #E3B873;
+        }
+    }
+    & .button-wrapper {
+        flex-grow: 2;
+        color: #E3B873;
+        padding-right: 10px;
+    
+        & button {
+            background-color: #E3B873;
+        color: white;
+        padding: 10px 30px;
+    
+        font-family: "Futura Demi C";
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        outline: none;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper-fantasies {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-list {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .nav-wrapper {
+        display: none;
+    }
+
+    .button-wrapper {
+        display: none;
+    }
+
+    .wrapper-instagram {
+        display: none;
+    }
+
+    .wrapper-video-block {
+        & .video-holder{
+            flex-grow: 0.5;
+            & iframe {
+                min-width: 100%;
+            }
+        }
+    }
+
+
+}
