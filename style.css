@@ -1,3 +1,137 @@
+body {
+  background-color: #fefefe; }
 
+.wrapper {
+  height: 2000px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.13);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.info {
+  width: 80%;
+  height: 20%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 1000px) {
+    .info {
+      flex-direction: column;
+      align-items: center; } }
+  .info .photo {
+    height: 100%;
+    width: 43%;
+    background-image: url("../portfolio/assets/images/27073032_121674565313644_4158535530429971680_n.jpg");
+    background-size: cover;
+    filter: drop-shadow(16px 16px 20px #aaaac5); }
+    @media (max-width: 1000px) {
+      .info .photo {
+        width: 100%; } }
+  .info .text {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 1000px) {
+      .info .text {
+        width: 100%; } }
+    .info .text .name {
+      width: 100%;
+      height: 40%; }
+      .info .text .name h1 {
+        text-align: center;
+        color: #083128;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-size: 48px; }
+    .info .text .github {
+      width: 100%;
+      height: 26%;
+      display: flex;
+      align-items: center; }
+      .info .text .github .logo {
+        width: 20%;
+        height: 100%;
+        background-image: url("../portfolio/assets/images/github-logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .info .text .github a {
+        margin-left: 20px;
+        color: #050522;
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-size: 24px; }
+        .info .text .github a:hover {
+          color: royalblue;
+          cursor: pointer; }
+    .info .text .social-networks {
+      width: 100%;
+      height: 30%; }
+
+.education {
+  width: 80%; }
+  .education p .btn-primary {
+    width: 43%;
+    height: 50px;
+    background-color: #09093b;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 28px; }
+
+.collapse .card .education-items,
+.collapse .card-body .education-items,
+.collapsing .card .education-items,
+.collapsing .card-body .education-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .collapse .card .education-items .item,
+  .collapse .card-body .education-items .item,
+  .collapsing .card .education-items .item,
+  .collapsing .card-body .education-items .item {
+    width: 48%;
+    display: flex;
+    justify-content: space-between; }
+    .collapse .card .education-items .item .logo,
+    .collapse .card-body .education-items .item .logo,
+    .collapsing .card .education-items .item .logo,
+    .collapsing .card-body .education-items .item .logo {
+      width: 30%;
+      background-image: url("../portfolio/assets/images/school.svg"); }
+    .collapse .card .education-items .item .text,
+    .collapse .card-body .education-items .item .text,
+    .collapsing .card .education-items .item .text,
+    .collapsing .card-body .education-items .item .text {
+      width: 65%; }
+      .collapse .card .education-items .item .text span,
+      .collapse .card-body .education-items .item .text span,
+      .collapsing .card .education-items .item .text span,
+      .collapsing .card-body .education-items .item .text span {
+        font-weight: bold; }
+
+.projects {
+  width: 80%;
+  height: 40%; }
+
+.carousel,
+.slide {
+  width: 100%;
+  height: 100%; }
+  .carousel .carousel-inner,
+  .slide .carousel-inner {
+    width: 100%;
+    height: 100%; }
+    .carousel .carousel-inner .project-theyalow,
+    .slide .carousel-inner .project-theyalow {
+      background: yellow;
+      width: 100%;
+      height: 100%; }
+    .carousel .carousel-inner .project-repair,
+    .slide .carousel-inner .project-repair {
+      background: blue;
+      width: 100%;
+      height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
