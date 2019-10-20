@@ -2,7 +2,7 @@ body {
   background-color: #fefefe; }
 
 .wrapper {
-  height: 2000px;
+  height: 1100px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -19,25 +19,26 @@ body {
   margin-top: 20px;
   display: flex;
   justify-content: space-between; }
-  @media (max-width: 1000px) {
+  @media (max-width: 900px) {
     .info {
       flex-direction: column;
       align-items: center; } }
   .info .photo {
     height: 100%;
     width: 43%;
-    background-image: url("../portfolio/assets/images/27073032_121674565313644_4158535530429971680_n.jpg");
-    background-size: cover;
-    filter: drop-shadow(16px 16px 20px #aaaac5); }
-    @media (max-width: 1000px) {
+    background: url("../portfolio/assets/images/27073032_121674565313644_4158535530429971680_n.jpg") center no-repeat;
+    background-size: contain;
+    filter: drop-shadow(10px 0 10px #aaaac5); }
+    @media (max-width: 900px) {
       .info .photo {
         width: 100%; } }
   .info .text {
     height: 100%;
     width: 55%;
     display: flex;
-    flex-direction: column; }
-    @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center; }
+    @media (max-width: 900px) {
       .info .text {
         width: 100%; } }
     .info .text .name {
@@ -46,15 +47,25 @@ body {
       .info .text .name h1 {
         text-align: center;
         color: #083128;
+        margin: 0;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         font-size: 48px; }
+        @media (max-width: 900px) {
+          .info .text .name h1 {
+            font-size: 38px; } }
+        @media (max-width: 375px) {
+          .info .text .name h1 {
+            font-size: 28px; } }
     .info .text .github {
       width: 100%;
       height: 26%;
       display: flex;
       align-items: center; }
+      @media (max-width: 900px) {
+        .info .text .github {
+          width: 60%; } }
       .info .text .github .logo {
-        width: 20%;
+        width: 10%;
         height: 100%;
         background-image: url("../portfolio/assets/images/github-logo.svg");
         background-size: contain;
@@ -64,6 +75,9 @@ body {
         color: #050522;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         font-size: 24px; }
+        @media (max-width: 900px) {
+          .info .text .github a {
+            font-size: 20px; } }
         .info .text .github a:hover {
           color: royalblue;
           cursor: pointer; }
@@ -79,6 +93,9 @@ body {
     background-color: #09093b;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 28px; }
+    @media (max-width: 900px) {
+      .education p .btn-primary {
+        width: 100%; } }
 
 .collapse .card .education-items,
 .collapse .card-body .education-items,
@@ -113,7 +130,14 @@ body {
 
 .projects {
   width: 80%;
-  height: 40%; }
+  height: 40%;
+  background: hotpink; }
+  @media (max-width: 900px) {
+    .projects {
+      height: 30%; } }
+  @media (max-width: 375px) {
+    .projects {
+      height: 20%; } }
 
 .carousel,
 .slide {
@@ -123,15 +147,50 @@ body {
   .slide .carousel-inner {
     width: 100%;
     height: 100%; }
-    .carousel .carousel-inner .project-theyalow,
-    .slide .carousel-inner .project-theyalow {
-      background: yellow;
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active,
+    .slide .carousel-inner .carousel-item,
+    .slide .carousel-inner .active {
       width: 100%;
       height: 100%; }
-    .carousel .carousel-inner .project-repair,
-    .slide .carousel-inner .project-repair {
-      background: blue;
-      width: 100%;
-      height: 100%; }
+
+.project-theyalow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .project-theyalow .show-panel {
+    width: 40%;
+    height: 10%;
+    display: none; }
+    @media (max-width: 375px) {
+      .project-theyalow .show-panel {
+        visibility: visible; } }
+  .project-theyalow .image {
+    display: block;
+    width: 40%;
+    height: 90%;
+    background: url(../portfolio/assets/images/THEYALOW\ Desktop.jpg) center no-repeat;
+    background-size: contain; }
+  .project-theyalow .description {
+    width: 35%;
+    height: 100%;
+    background: gray; }
+
+.project-repair {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+  .project-repair .image {
+    display: block;
+    width: 60%;
+    background: url(../portfolio/assets/images/repair-design-project.png) center no-repeat;
+    background-size: contain; }
+  .project-repair .description {
+    width: 35%;
+    background: green; }
 
 /*# sourceMappingURL=style.css.map */
